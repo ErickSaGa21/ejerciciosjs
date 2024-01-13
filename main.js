@@ -308,6 +308,7 @@ if(c == 'Master' || c == 'master'){
 }
 */
 //ejercicio 11
+/*
 alert('Gracias por rentar nuestros vehiculos. Presione Aceptar para continuar con el pago')
 let tipo = prompt('¿Que tipo de vehiculo rento con nosotros?\n1.-Coche\n2.-Moto\n3.-Autobus')
 if(tipo == 1)
@@ -364,6 +365,36 @@ if(tipo == 3)
 else{
     alert('Ingrese el numero del vehiculo rentado')
 }
+*/
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++EJERCICIOS ARRAYS++++++++++++++++++++++++++++++++++++++++++
+//EJERCICIO 1
+/*
+const data = [];
 
+for(let index = 0; index <10; index++)
+{
+    let na = Math.floor(Math.random()*100)+1;
+    data.push(na);
+}
+console.log(data);
+*/
 
+//EJERCICIO 2
+/*
+let inp = prompt('Ingresa palabras separadas por comas')
+//split es la palabra reservada para dividir el string por medio del separador que es la coma y la convierte en un array
+let res = inp.split(',');
+console.log(res);
+*/
+//EJERCICIO 3
+const naleat = [10,40,30,20,15,5];
+//slice sirve para  crear una copia superficial del array
+let copy = naleat.slice(); 
+//la funcion que se pasa como sort resta b de a y si da negativo a se coloca antes que b y viceversa 
+ copy.sort(function(a,b){
+    return a-b;
+ });
+
+ console.log("Array desordenado:", naleat);
+ console.log('Array ordenado:', copy);
