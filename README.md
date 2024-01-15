@@ -1,1 +1,1 @@
-Ejercicios de practica de condicionales, arrays
+Ejercicios de practica de condicionales, arrays, while
