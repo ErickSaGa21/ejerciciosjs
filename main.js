@@ -388,6 +388,7 @@ let res = inp.split(',');
 console.log(res);
 */
 //EJERCICIO 3
+/*
 const naleat = [10,40,30,20,15,5];
 //slice sirve para  crear una copia superficial del array
 let copy = naleat.slice(); 
@@ -398,3 +399,80 @@ let copy = naleat.slice();
 
  console.log("Array desordenado:", naleat);
  console.log('Array ordenado:', copy);
+ */
+//++++++++++++++++++++++++++++++++++ESTRUCTURAS DE CONTROL: WHILE++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//EJERCICIO 1
+/*
+ let nume = prompt('Ingresa un numero');
+ let cont = 0;
+ while(cont <=nume)
+ {
+    console.log(cont);
+    cont+=5;
+ }
+ */
+//EJERCICIO 2
+/*
+let lote = prompt('Ingresa 2 numeros ente 1 y 50. Si ganaste tus numeros diran: LOTERIA');
+let segundo = prompt('Ingresa el segundo');
+let cont = 1;
+while(cont <= 50)
+{
+    if(cont == lote || cont == segundo){
+       console.log(cont, 'LOTERIA')
+       cont++
+    }
+    else
+    {
+        console.log(cont);
+        cont++
+    }
+}
+*/
+//EJERCICIO 3
+/*
+const data = [];
+let cont = 1;
+while(cont <=100)
+{
+    let innum = prompt('Ingresa un numero. Si deseas terminar ingresa un 0');
+    if(isNaN(innum))
+    {
+        alert('Por favor, ingresa un numero valido')
+        cont++
+    }
+    else if (innum == 0){
+        console.log(data)
+        alert(data)
+        break;
+    }
+    else{
+        console.log('Numero ingresado:', parseInt(innum))
+        data.push(innum);
+        cont++
+    }
+}
+*/
+//EJERCICIO 4
+const data = [];
+let cont = 1;
+while(cont <=100)
+{
+    let inpa = prompt('Ingresa una letra o palabra.\n Si deseas terminar no ingreses ninguna palabra o letra y dale en Aceptar');
+    if(isNaN(inpa))
+    {
+        console.log('Numero ingresado:', inpa)
+        data.push(inpa);
+        cont++
+        
+    }
+    else if (inpa== ""){
+        console.log(data)
+        alert(data)
+        break;
+    }
+    else{
+        alert('Por favor, ingresa una letra o palabra valida')
+        cont++
+    }
+}
